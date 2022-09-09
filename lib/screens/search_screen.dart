@@ -28,18 +28,21 @@ class SearchScreen extends StatelessWidget {
           Gap(AppLayout.getHeight(20)),
           const AppIconText(icon: Icons.flight_land_rounded, text: "Arrival"),
           Gap(AppLayout.getHeight(25)),
-          Container(
-            padding: EdgeInsets.symmetric(vertical: AppLayout.getWidth(18),
-                                          horizontal: AppLayout.getHeight(15)),
+          InkWell(
+            onTap: ()=>print("You're Tapped"),
+            child: Container(
+              padding: EdgeInsets.symmetric(vertical: AppLayout.getWidth(18),
+                                            horizontal: AppLayout.getHeight(15)),
 
-            decoration: BoxDecoration(
-              color: const Color(0xD91130CE),
-              borderRadius: BorderRadius.circular(AppLayout.getWidth(10)),
+              decoration: BoxDecoration(
+                color: const Color(0xD91130CE),
+                borderRadius: BorderRadius.circular(AppLayout.getWidth(10)),
+              ),
+              child: Center(child: Text(
+                "Find tickets",
+                style: Styles.textStyle.copyWith(color: Colors.white),))
+
             ),
-            child: Center(child: Text(
-              "Find tickets",
-              style: Styles.textStyle.copyWith(color: Colors.white),))
-
           ),
           Gap(AppLayout.getHeight(40)),
           const AppDoubleTextWidget(bigText: "Upcoming flights", smallText: "View all"),
