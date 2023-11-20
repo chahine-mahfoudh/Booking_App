@@ -1,6 +1,6 @@
 # hello
 
-A new Flutter project.
+this new Flutter project is a frontend app for booking 
 
 ## Getting Started
 
